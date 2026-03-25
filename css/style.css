@@ -824,11 +824,11 @@ footer p {
     gap: 0.65rem;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
   .nav-links {
     order: 2;
-    width: 100%;
+    flex: 1;
     gap: 0.5rem;
     overflow-x: auto;
     white-space: nowrap;
@@ -851,6 +851,7 @@ footer p {
     color: var(--text);
   }
   .theme-toggle {
+    flex-shrink: 0;
     margin-left: auto;
   }
   section {
