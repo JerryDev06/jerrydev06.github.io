@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Chris Jericson</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="theme-overlay"></div>
+
+  <nav>
+    <a href="index.html" class="nav-logo">JerryDev06</a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#achievements">Achievements</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="logs.html">Log</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="theme-toggle" id="theme-toggle-btn" title="Toggle light/dark">
+        <div class="theme-toggle-knob">🌙</div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="logs-page-header">
+    <a href="index.html#projects" class="back-link">← Back to portfolio</a>
+    <h1>Projects</h1>
+    <p>A complete list of what I have built so far.</p>
+  </div>
+
+  <div class="logs-page-body">
+    <div class="log-filters">
+      <span class="log-total" id="projects-total"></span>
+    </div>
+    <div class="projects-list" id="projects-list-all"></div>
+  </div>
+
+  <footer>
+    <p>© 2026 Chris Jericson. R — All rights reserved</p>
+    <p><a href="index.html" style="color:var(--muted); text-decoration:none; font-family:var(--mono); font-size:0.65rem;">← Back to portfolio</a></p>
+  </footer>
+
+  <script src="data/data.js"></script>
+  <script src="js/projects.js"></script>
+</body>
+</html>

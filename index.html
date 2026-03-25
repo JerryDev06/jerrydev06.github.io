@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chris Jericson. R</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="theme-overlay"></div>
+
+    <!-- NAV -->
+    <nav>
+      <a href="#hero" class="nav-logo">JerryDev06</a>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#log">Log</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div
+          class="theme-toggle"
+          id="theme-toggle-btn"
+          title="Toggle light/dark"
+        >
+          <div class="theme-toggle-knob">🌙</div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <div id="hero">
+      <div class="hero-grid-bg"></div>
+      <p class="hero-label">// Portfolio — 2026</p>
+      <h1 class="hero-name">
+        Chris Jericson. R<span>Developer &amp; Security Enthusiast</span>
+      </h1>
+      <p class="hero-desc">
+        B.E. CSE student. Building things with code, breaking things with
+        curiosity.<br />
+        Into ethical hacking, Arduino robotics, and always learning something
+        new.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#log" class="btn">Daily Log</a>
+      </div>
+      <div class="hero-scroll">Scroll to explore</div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <p class="section-label reveal">01 — About</p>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h2>Building, breaking,<br />and learning every day.</h2>
+          <p>
+            I'm a 2nd year BE Computer Science &amp; Engineering student focused
+            on placement prep, cybersecurity, and building real things.
+          </p>
+          <p>
+            My interests go deep into ethical hacking and penetration testing.
+            Outside code I build Arduino robots, run a self-hosted NAS, and stay
+            curious about how everything works under the hood.
+          </p>
+          <p>
+            Currently prepping for placements while sharpening DSA, OOPs, DBMS,
+            and hands-on security skills.
+          </p>
+          <br />
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap">
+            <a href="#" class="btn btn-primary">Download Resume</a>
+            <a
+              href="https://leetcode.com/u/JerryDev06"
+              target="_blank"
+              class="btn"
+            >
+              <img
+                src="https://cdn.simpleicons.org/leetcode/888888"
+                width="14"
+                height="14"
+                style="vertical-align: middle; margin-right: 6px"
+              />LeetCode
+            </a>
+            <a
+              href="https://tryhackme.com/p/JerryDev06"
+              target="_blank"
+              class="btn"
+            >
+              <img
+                src="https://cdn.simpleicons.org/tryhackme/888888"
+                width="14"
+                height="14"
+                style="vertical-align: middle; margin-right: 6px"
+              />TryHackMe
+            </a>
+          </div>
+        </div>
+        <div class="about-img reveal">
+          <img src="assets/profile.jpg" alt="Jerry" />
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat-item">
+            <div class="stat-num">2nd</div>
+            <div class="stat-label">Year — B.E.CSE</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">4th</div>
+            <div class="stat-label">Semester — Active</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">5+</div>
+            <div class="stat-label">Languages Known</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">∞</div>
+            <div class="stat-label">Things Left to Learn</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <p class="section-label reveal">02 — Skills</p>
+      <div class="skills-grid reveal" id="skills-grid"></div>
+    </section>
+
+    <!-- ACHIEVEMENTS — preview only (latest 2) -->
+    <section id="achievements">
+      <p class="section-label reveal">03 — Achievements</p>
+      <div class="log-header reveal">
+        <h2>Milestones I am proud of.</h2>
+        <span class="log-count" id="achievements-count"></span>
+      </div>
+      <div class="log-timeline reveal" id="achievements-timeline"></div>
+      <div class="log-view-all reveal">
+        <a href="achievements.html" class="btn">View all achievements →</a>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <p class="section-label reveal">04 — Projects</p>
+      <div class="log-header reveal">
+        <h2>Things I have built.</h2>
+        <span class="log-count" id="projects-count"></span>
+      </div>
+      <div class="projects-list reveal" id="projects-list"></div>
+      <div class="log-view-all reveal">
+        <a href="projects.html" class="btn">View all projects →</a>
+      </div>
+    </section>
+
+    <!-- DAILY LOG — preview only (latest 3) -->
+    <section id="log">
+      <p class="section-label reveal">05 — Daily Log</p>
+      <div class="log-header reveal">
+        <h2>Learning in public.</h2>
+        <span class="log-count" id="log-count"></span>
+      </div>
+      <div class="log-timeline reveal" id="log-timeline"></div>
+      <div class="log-view-all reveal">
+        <a href="logs.html" class="btn">View all entries →</a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <p class="section-label reveal">06 — Contact</p>
+      <div class="contact-grid">
+        <div class="contact-left reveal">
+          <h2>Let's connect.</h2>
+          <p>
+            Open to internships, collaborations, and interesting conversations.
+            Always reply.
+          </p>
+          <a
+            href="https://linkedin.com/in/chrisjericsonr"
+            class="btn btn-primary"
+            >Say Hello →</a
+          >
+        </div>
+        <div class="contact-links reveal">
+          <a
+            href="#"
+            onclick="
+              navigator.clipboard.writeText('jerry.chrisr06@gmail.com');
+              alert('Email copied!');
+            "
+            class="contact-link"
+          >
+            <span class="contact-link-label">
+              <img
+                src="https://cdn.simpleicons.org/gmail/888888"
+                width="14"
+                height="14"
+                style="vertical-align: middle; margin-right: 6px"
+              />Email
+            </span>
+            <span class="contact-link-val">jerry.chrisr06@gmail.com</span>
+          </a>
+
+          <a
+            href="https://github.com/JerryDev06"
+            target="_blank"
+            class="contact-link"
+          >
+            <span class="contact-link-label">
+              <img
+                src="https://cdn.simpleicons.org/github/888888"
+                width="14"
+                height="14"
+                style="vertical-align: middle; margin-right: 6px"
+              />GitHub
+            </span>
+            <span class="contact-link-val">github.com/JerryDev06</span>
+          </a>
+
+          <a
+            href="https://linkedin.com/in/chrisjericsonr"
+            target="_blank"
+            class="contact-link"
+          >
+            <span class="contact-link-label">
+              <img
+                src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg"
+                width="14"
+                height="14"
+                style="
+                  vertical-align: middle;
+                  margin-right: 6px;
+                  filter: invert(50%);
+                "
+              />LinkedIn
+            </span>
+            <span class="contact-link-val">linkedin.com/in/chrisjericsonr</span>
+          </a>
+
+          <a
+            href="https://instagram.com/_.jerry06._"
+            target="_blank"
+            class="contact-link"
+          >
+            <span class="contact-link-label">
+              <img
+                src="https://cdn.simpleicons.org/instagram/888888"
+                width="14"
+                height="14"
+                style="vertical-align: middle; margin-right: 6px"
+              />Instagram
+            </span>
+            <span class="contact-link-val">@_.jerry06._</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Chris Jericson. R — All rights reserved</p>
+      <p>Built with HTML · CSS · JS</p>
+    </footer>
+
+    <script src="data/data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

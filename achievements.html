@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Achievements | Chris Jericson</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="theme-overlay"></div>
+
+  <nav>
+    <a href="index.html" class="nav-logo">JerryDev06</a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#achievements">Achievements</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="logs.html">Log</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="theme-toggle" id="theme-toggle-btn" title="Toggle light/dark">
+        <div class="theme-toggle-knob">🌙</div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="logs-page-header">
+    <a href="index.html#achievements" class="back-link">← Back to portfolio</a>
+    <h1>Achievements</h1>
+    <p>Milestones from projects, security practice, and continuous learning.</p>
+  </div>
+
+  <div class="logs-page-body">
+    <div class="log-filters">
+      <span class="log-total" id="achievements-total"></span>
+    </div>
+    <div class="log-timeline" id="achievements-timeline-all"></div>
+  </div>
+
+  <footer>
+    <p>© 2026 Chris Jericson. R — All rights reserved</p>
+    <p><a href="index.html" style="color:var(--muted); text-decoration:none; font-family:var(--mono); font-size:0.65rem;">← Back to portfolio</a></p>
+  </footer>
+
+  <script src="data/data.js"></script>
+  <script src="js/achievements.js"></script>
+</body>
+</html>
